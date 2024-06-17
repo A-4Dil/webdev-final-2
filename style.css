@@ -1,0 +1,239 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+header  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a{
+    font-weight: bold;
+    color: rgb(8, 13, 72);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li a:hover {
+    color: rgb(186, 26, 26);
+}
+header,footer {
+    padding: 20px;
+    background-color: rgb(167, 184, 200);
+    margin: 0;
+}
+
+main {
+    
+    min-height: 70vh;
+}
+footer {
+    bottom: 0;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutus {
+    max-width: 600px;
+    margin: 0 auto;
+}
+table, table tr, table td {
+    border: solid 1px black;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    height:100%;
+    margin: 0 auto;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.product-details .price {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.product-details .actions {
+    display: block;
+    flex-wrap: wrap;
+    float: right;
+    left: 40px;
+}
+.product-details .add-to-cart{
+    all: unset;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 12px;
+    width: 200px;
+    display: block;
+    background-color: rgb(31, 126, 41);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button {
+ margin-bottom: 10px;
+    
+}
+.image-container {
+    max-width: 200px;
+}
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: top;
+}
+.products .product-item {
+    list-style: none;
+}
+.products .product-item a {
+    all: unset;
+}
+.form-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-container textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #001bcc;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #032080;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center; /* Ensures contents are centered */
+    align-items: start; /* Align items at their start, preventing stretching */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.working-hours, .company-info {
+    flex: 1; /* Each takes equal width */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Collapses border to avoid double lines */
+    margin: 0 auto; /* Centers the table horizontally */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Light grey border for readability */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #071ac6;
+    color: white;
+}
+
+@media (max-width: 980px) {
+    .content {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+    header {
+        padding: 0;
+    }
+    header nav ul {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    header nav ul li {
+        justify-content: center;
+        text-align: center;
+    }
+    .products {
+        all: unset;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+    }
+    .product-item {
+        width: 95%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid grey;
+        text-align: center;
+    }
+    .image-container {
+        margin: 0 auto;
+    }
+    footer {
+        padding: 20px 0;
+    }
+}
+  .another-image{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://www.trustedreviews.com/wp-content/uploads/sites/54/2023/06/Best-MacBook-1-920x518.jpg);
+  }
+

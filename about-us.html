@@ -1,0 +1,123 @@
+Got it! Here's how you can add two buttons, one for Instagram and one for Facebook, below the "About Us" section in your HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONICA</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .aboutus-container {
+            background-color: #f0f0f0; /* Background color of the container */
+            padding: 20px; /* Padding around the content inside the container */
+            margin: 20px auto; /* Margin to center the container horizontally */
+            max-width: 800px; /* Maximum width of the container */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+        }
+        .aboutus {
+            text-align: center; /* Center-align the content inside the container */
+        }
+        .content {
+            max-width: 600px; /* Limit the width of the content inside the container */
+            margin: 0 auto; /* Center the content horizontally */
+        }
+        .aboutus-info {
+            background-color: #ffffff; /* Background color of the About Us box */
+            padding: 20px; /* Padding around the About Us content */
+            margin-top: 20px; /* Margin between the Working Hours and About Us boxes */
+            border-radius: 10px; /* Rounded corners for the box */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+        }
+        .button-container {
+            margin-top: 20px; /* Margin between About Us info and buttons */
+            text-align: center; /* Center-align the buttons */
+        }
+        .button-container a {
+            display: inline-block; /* Make the buttons display inline */
+            margin: 0 10px; /* Margin between the buttons */
+            padding: 10px 20px; /* Padding for the buttons */
+            background-color: #007bff; /* Background color of the buttons */
+            color: #ffffff; /* Text color of the buttons */
+            border-radius: 5px; /* Rounded corners for the buttons */
+            text-decoration: none; /* Remove underline from the links */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./laptop.html">laptops</a></li>
+                <li><a href="./mobile.html">mobiles</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About us</a></li>
+                <li><a href="./contact.html">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="aboutus-container"> <!-- Container for the company info -->
+        <div class="aboutus">
+            <div class="content">
+                <div class="working-hours">
+                    <h2>Working Hours</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                    <div class="insta-button"> <!-- Instagram button -->
+                        <!-- Instagram button code -->
+                    </div>
+                </div>
+                <div class="aboutus-info"> <!-- Container for the About Us info -->
+                    <h2>About Us</h2>
+                    <p>Established in 1995, Mobiles.co.uk is the UK’s longest-running online mobile retailer. Whether you’re looking for cheap pay monthly phones, upgrades or SIM only, you can find cheap deals across a range of manufacturers from Apple, Samsung and Google across multiple networks including Vodafone, iD Mobile and Voxi.</p>
+                    <p>To learn more about our great service, just take a look at the awards we’ve won over the years. We always stock the latest new handsets and keep our fingers on the pulse to provide the latest smartphone news - so you can choose a mobile that's right for your lifestyle!</p>
+                </div>
+                <div class="button-container"> <!-- Container for the buttons -->
+                    <a href="https://www.instagram.com/apple?igsh=MWNtZXVsY21ldjU4eA==" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/apple" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        copyright©
+    </footer>
+</body>
+
+</html>
